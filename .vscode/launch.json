@@ -7,7 +7,7 @@
         {
             "type": "opera",
             "request": "launch",
-            "name": "Launch Opera against localhost",
+            "name": "Launch opera against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
