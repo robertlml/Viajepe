@@ -62,11 +62,16 @@ header.shadow .navbar a::after{
     background: var(--text-color);
     box-shadow: 0 0 4px rgb(14, 55, 54 / 15%);
 }
-
+/*
 .logo{
     font-size: 1rem;
     font-weight: 600;
     color: var(--bg-color);
+    
+}*/
+.logo img {
+    height:45px; 
+    width: auto; 
 }
 
 .navbar{
@@ -220,18 +225,7 @@ header.shadow .navbar a::after{
     font-size: 20px;
     cursor: pointer;
 }
-/*
-.place-icon{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    background: var(--text-color);
-    color: var(--bg-color);
-    font-size: 20px;
-    cursor: pointer;
-}
-*/
+
 .places-container .box:hover .place-icon{
     background: #01151d;
 }
@@ -378,5 +372,33 @@ section{
     }
     .about-text p br{
         display: contents;
+    }
+    .heading h1, 
+    .about-text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:662px){
+    .video-container video{
+        width: 100%;
+    }
+}
+@media (max-width:452px){
+    .container {
+        min-height: 554px;
+    }
+    .home-text h1{
+        font-size: 1.7rem;
+    }
+    .container img {
+        object-position: left;
+    }
+    .heading h1,
+    .about-text h1 {
+        font-size: 1.2rem;
+    }
+    .about-text{
+        text-align: center;
     }
 }
