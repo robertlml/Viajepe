@@ -35,3 +35,18 @@ var swiper = new Swiper(".home", {
        
 });
 
+//video
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.querySelector("video");
+    var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                video.load();
+                observer.unobserve(video);
+            }
+        });
+    }, { threshold: 0.25 });
+
+    observer.observe(video);
+});
+

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Sitio Web Viaja y Vive</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <!--swiper css-->        
         <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
        
@@ -40,7 +40,7 @@
                         <div class="home-text">
                             <span>Descubre ahora</span>
                             <h1>Explora la majestuosa <br>Ciudad Inca de <br>Machu Picchu</h1>
-                            <a href="pagina1.html" class="btn">Explora</a>
+                            <a href="machupicchu.html" class="btn">Explora</a>
                         </div>
                     </div>
                     
@@ -49,7 +49,7 @@
                         <div class="home-text">
                             <span>Descubre ahora </span>
                             <h1>Explora la <br>Colorida Montaña<br> de los 7 colores </h1>
-                            <a href="pagina2.html" class="btn">Explora</a>
+                            <a href="montaña7colores.html" class="btn">Explora</a>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
                         <div class="home-text">
                             <span>Descubre ahora </span>
                             <h1>Explora la <br>Hermosa Laguna  <br> Humantay </h1>
-                            <a href="pagina3.html" class="btn">Explora</a>
+                            <a href="lagunahumantay.html" class="btn">Explora</a>
                         </div>
                     </div>
                       
@@ -79,7 +79,7 @@
                 <h2>Laguna Humantay</h2>
             </div>
          
-            <a href="pagina3.html">
+            <a href="lagunahumantay.html">
                 <i class="bx bx-right-arrow-alt place-icon"></i>
             </a>
         </div>
@@ -91,7 +91,7 @@
             <div class="place-text">
                 <h2>Machu Picchu</h2>
             </div>
-            <a href="pagina1.html">
+            <a href="machupicchu.html">
                 <i class="bx bx-right-arrow-alt place-icon"></i>
             </a>
         </div>
@@ -103,7 +103,7 @@
             <div class="place-text">
                 <h2>Montaña de 7 colores</h2>
             </div>
-            <a href="pagina2.html">
+            <a href="montaña7colores.html">
                 <i class="bx bx-right-arrow-alt place-icon"></i>
             </a>
         </div>
@@ -116,8 +116,12 @@
     <div class="heading">
         <h1>Ve los lugares <br>más atractivos</h1>
     </div>
+ 
     <div class="video-container">
-       <video src="video/viajayvive.mp4" muted autoplay loop></video> 
+        <video muted autoplay loop preload="none" poster="img/vistaprevia2.jpg" controls>
+            <source src="video/viajayvive.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
     </div>
 </section>
 <section class="about" id="about">
@@ -167,7 +171,7 @@
 
 <!--Swiper js--> 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 
